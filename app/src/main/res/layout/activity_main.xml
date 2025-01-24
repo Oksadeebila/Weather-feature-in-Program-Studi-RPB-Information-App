@@ -1,0 +1,301 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Bagian Header -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Icon Cloud -->
+        <ImageView
+            android:id="@+id/btnCloud"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/cloudy_392807"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Parent LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Teks Selamat Datang -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerLayout"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:text="Selamat Datang di"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Teks Nama Program Studi -->
+        <TextView
+            android:id="@+id/tvProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:text="Program Studi Pertanian dan Biosistem"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <GridLayout
+            android:id="@+id/buttonGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProgram"
+            android:layout_marginTop="24dp"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:padding="8dp">
+
+            <!-- Tombol Struktur dan Organisasi -->
+            <LinearLayout
+                android:id="@+id/btn_layout_organisasi"
+                android:layout_width="0dp"
+                android:layout_height="133dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/main_color"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/btn_img_organisasi"
+                    android:layout_width="51dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/ic_organisasi" />
+
+                <TextView
+                    android:id="@+id/btn_txt_organisasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organisasi"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Tombol Tentang dan Sejarah -->
+            <LinearLayout
+                android:id="@+id/btn_layout_history"
+                android:layout_width="0dp"
+                android:layout_height="133dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/main_color"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/btn_img_history"
+                    android:layout_width="51dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_history" />
+
+                <TextView
+                    android:id="@+id/btn_txt_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang RPB "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+            <!-- Tombol Dosen dan Staf -->
+            <LinearLayout
+                android:id="@+id/btn_layout_dosen"
+                android:layout_width="0dp"
+                android:layout_height="133dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/main_color"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/btn_img_dosen"
+                    android:layout_width="51dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_dosen" />
+
+                <TextView
+                    android:id="@+id/btn_txt_dosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosen dan Staf"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Tombol Prestasi -->
+            <LinearLayout
+                android:id="@+id/btn_layout_prestasi"
+                android:layout_width="0dp"
+                android:layout_height="133dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/main_color"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/btn_img_prestasi"
+                    android:layout_width="51dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_prestasi" />
+
+                <TextView
+                    android:id="@+id/btn_txt_prestasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prestasi"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+        android:id="@+id/visionMissionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Header Visi dan Misi -->
+        <TextView
+            android:id="@+id/visionMissionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visi dan Misi"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Visi -->
+        <TextView
+            android:id="@+id/visionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppins_medium"
+            android:text="Visi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/visionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menjadi Program Studi Rekayasa Pertanian dan Biosistem yang unggul dalam penerapan teknologi pertanian berbasis keislaman."
+            android:textSize="14sp"
+
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Misi -->
+        <TextView
+            android:id="@+id/missionText"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/missionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="1. Melaksanakan pendidikan rekayasa pertanian dan biosistem yang unggul dalam penerapan teknologi pertanian dengan prinsip keislaman.\n\n"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/missionDescription2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="2. Melaksanakan penelitian dan pengabdian masyarakat dalam bidang teknologi pertanian serta rekayasa biosistem.\n\n"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/missionDescription3"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"
+            android:text="3. Menjalin kerjasama dengan dunia usaha dan dunia industri serta pemerintah dalam pengembangan produk teknologi pertanian."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

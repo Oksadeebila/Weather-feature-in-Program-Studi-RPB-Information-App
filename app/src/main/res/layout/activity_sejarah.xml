@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang dan Sejarah Rekayasa Pertanian dan Biosistem FTS UIKA Bogor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Content -->
+        <TextView
+            android:id="@+id/content"
+            android:fontFamily="@font/robto_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rekayasa pertanian merupakan program studi yang mengkombinasikan ilmu-ilmu pertanian konvensional dengan prinsip-prinsip rekayasa biosistem untuk membangun dan mengelola sistem pertanian. Program studi ini mempelajari kompetisi teknis unggul untuk mengembangkan sistem pertanian berkelanjutan untuk mencapai swasembada kebutuhan pokok dan meningkatkan kualitas hidup masyarakat."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Keunggulan dan keunikan dari prodi Rekayasa Pertanian dan Biosistem UIKA yaitu:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <!-- List of advantages -->
+        <TextView
+            android:id="@+id/advantages"
+            android:fontFamily="@font/robto_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Mengembangkan ilmu rekayasa pertanian dan biosistem yang mendukung pertanian perkotaan dan pertanian presisi dengan tetap mengikuti konsep Islam yang menyeluruh dan rahmatan lil alamin.\n\n• Kurikulum prodi Rekayasa Pertanian dan Biosistem UIKA juga memiliki konsentrasi pada pengolahan hasil pertanian untuk mendukung pertanian masa depan sehingga SDM yang dihasilkan tidak hanya mengembangkan ilmu pada desain, manajemen, serta produksi pertanian, tetapi juga pada pengolahan hasil.\n\n• Memiliki 6 bidang yang menjadi konsentrasi pengembangan ilmu teknik pertanian yaitu teknik mesin dan otomasi, teknik pertanian perkotaan, pertanian presisi, teknik pengolahan hasil pertanian, dan teknik informatika pertanian."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp" />
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program Studi Rekayasa Pertanian dan Biosistem Bergabung dengan Perhimpunan Teknik Pertanian Indonesia (PERTETA) Sebagai Anggota"
+            android:textSize="16sp"
+            android:fontFamily="@font/robto_medium"
+            android:textStyle="italic"
+            android:background="#FFCC00"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+</ScrollView>
