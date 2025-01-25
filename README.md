@@ -162,5 +162,11 @@ Untuk berkontribusi, bisa lakuakan cara ini :
    ```
 5. Buat pull request.
 
+Terima kasih kepada teman-teman kelompok yang berkontribusi dalam penyusunan aplikasi ini, dosen mata kuliah PPB, Saffarurdin Hidayat Al-Ikhsan, S.Kom., M.Kom., atas bimbingan dan ilmu yang diberikan selama proses pembelajaran.
 
+Kami juga menyampaikan apresiasi kepada komunitas developer, khususnya Jubayer melalui repository di GitHub, yang menjadi salah satu referensi penting dalam pengembangan aplikasi ini.
+
+Tak lupa, ucapan terima kasih kami tujukan kepada keluarga dan sahabat yang terus mendukung kami, baik secara langsung maupun tidak langsung, dalam menyelesaikan proyek ini.
+
+Semoga aplikasi ini dapat memberikan manfaat bagi para pengguna dan menjadi langkah awal yang baik untuk pengembangan lebih lanjut.
 
